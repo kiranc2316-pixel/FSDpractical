@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student CRUD Application</title>
+</head>
+<body>
+
+<h2>Student Management System</h2>
+
+{% if message %}
+<p><b>{{ message }}</b></p>
+{% endif %}
+
+<h3>Add Student</h3>
+<form method="POST" action="/">
+    <input type="hidden" name="action" value="insert">
+    Name: <input type="text" name="name" required>
+    Course: <input type="text" name="course" required>
+    Marks: <input type="number" name="marks" min="0" max="100" required>
+    <button type="submit">Add Student</button>
+</form>
+
+<h3>Update Student</h3>
+<form method="POST" action="/">
+    <input type="hidden" name="action" value="update">
+    Student ID: <input type="number" name="id" required>
+    New Name: <input type="text" name="name" required>
+    New Course: <input type="text" name="course" required>
+    New Marks: <input type="number" name="marks" min="0" max="100" required>
+    <button type="submit">Update Student</button>
+</form>
+
+<h3>Delete Student</h3>
+<form method="POST" action="/"
+      onsubmit="return confirm('Delete this student?');">
+    <input type="hidden" name="action" value="delete">
+    Student ID: <input type="number" name="id" required>
+    <button type="submit">Delete Student</button>
+</form>
+
+<h3>Student Records</h3>
+<table border="1" cellpadding="8">
+    <tr>
+        <th>Student ID</th>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Marks</th>
+    </tr>
+    {% for s in students %}
+    <tr>
+        <td>{{ s[0] }}</td>
+        <td>{{ s[1] }}</td>
+        <td>{{ s[2] }}</td>
+        <td>{{ s[3] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

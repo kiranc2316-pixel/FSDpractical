@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Management System</title>
+</head>
+<body>
+
+    <h2>Employee Management System</h2>
+
+    <form action="/insert" method="POST">
+        Name:
+        <input type="text" name="name" required>
+        <br><br>
+
+        Department:
+        <input type="text" name="department" required>
+        <br><br>
+
+        <button type="submit">Add Employee</button>
+    </form>
+
+    <br>
+    <a href="/display">Display All Employees</a>
+
+    {% if employees is defined %}
+    <h3>Employee Records</h3>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Emp_ID</th>
+            <th>Name</th>
+            <th>Department</th>
+        </tr>
+
+        {% for emp in employees %}
+        <tr>
+            <td>{{ emp[0] }}</td>
+            <td>{{ emp[1] }}</td>
+            <td>{{ emp[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+
+</body>
+</html>

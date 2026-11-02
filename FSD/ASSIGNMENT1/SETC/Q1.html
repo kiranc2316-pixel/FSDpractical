@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Samarth College of Computer Science</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f7ff;
+            color: #26364a;
+        }
+
+        header {
+            background: linear-gradient(120deg, #dff6ff, #ffffff, #fff1c9);
+            color: #123c75;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #f5bd35;
+            border-radius: 10px;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        header h1 {
+            color: #123c75;
+        }
+
+        header h3 {
+            color: #087e8b;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #123c75;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd34e;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(18, 60, 117, 0.12);
+        }
+
+        h2 {
+            color: #087e8b;
+        }
+
+        .college-image {
+            width: 500px;
+            max-width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+
+        #home {
+            background-color: #eaf6ff;
+            border-left: 6px solid #168aad;
+        }
+
+        #about {
+            background-color: #e9fff5;
+            border-left: 6px solid #159b79;
+        }
+
+        #courses {
+            background-color: #f5efff;
+            border-left: 6px solid #8054c7;
+        }
+
+        #contact {
+            background-color: #fff3e6;
+            border-left: 6px solid #f08a24;
+        }
+
+        li {
+            margin: 8px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #123c75;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            border-top: 4px solid #f5bd35;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 8px;
+            }
+
+            header h1 {
+                font-size: 23px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- Keep logo.png in the same folder as index.html -->
+        <img src="C:\Users\kiran\OneDrive\Desktop\logo.jpg"
+             alt="College Logo"
+             class="logo">
+
+        <h1>Samarth College of Computer Science, Belhe</h1>
+        <h3>Samarth Rural Educational Institute's</h3>
+
+        <p>
+            Bangarwadi, Tal. Junnar, Dist. Pune - 412410
+        </p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About College</a> |
+        <a href="#courses">Courses</a> |
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section>
+        <h2 id="home">Welcome to Samarth College</h2>
+
+        <img src=""
+             alt="College Campus"
+             class="college-image">
+
+        <p>
+            Welcome to Samarth College of Computer Science, Belhe.
+            Our college provides quality education and opportunities
+            for students to develop academic and technical skills.
+        </p>
+    </section>
+
+    <section>
+        <h2 id="about">About College</h2>
+
+        <p>
+            Samarth College of Computer Science, Belhe is affiliated
+            to Savitribai Phule Pune University and provides
+            undergraduate and postgraduate education in various
+            disciplines.
+        </p>
+
+        <p>
+            The college focuses on academic development, technical
+            knowledge and overall development of students.
+        </p>
+    </section>
+
+    <section>
+        <h2 id="courses">Courses Offered</h2>
+
+        <h3>Undergraduate Courses</h3>
+        <ul>
+            <li>B.Sc. Computer Science</li>
+            <li>B.Sc. Information Technology</li>
+            <li>B.C.A. (Science)</li>
+            <li>B.B.A. (International Business)</li>
+            <li>B.Com.</li>
+        </ul>
+
+        <h3>Postgraduate Courses</h3>
+        <ul>
+            <li>M.Sc. Computer Science</li>
+            <li>M.Sc. Computer Application</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 id="contact">Contact Us</h2>
+
+        <p>
+            <b>Address:</b><br>
+            Kalyan-AhilyaNagar Highway,<br>
+            At: Bangarwadi, Post: Belhe,<br>
+            Tal. Junnar, Dist. Pune,<br>
+            Maharashtra - 412410
+        </p>
+
+        <p>
+            <b>Email:</b>
+            <a href="mailto:samarthbcscollege1446@gmail.com">
+                samarthbcscollege1446@gmail.com
+            </a>
+        </p>
+
+        <p>
+            <b>Phone:</b>
+            +91 9850570084 / +91 8830728777
+        </p>
+
+        <p>
+            <b>College Timing:</b><br>
+            Monday to Saturday - 09:10 am to 04:10 pm
+        </p>
+    </section>
+
+    <footer>
+        <p>
+            <b>Samarth College of Computer Science, Belhe</b>
+        </p>
+
+        <p>© 2026 All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+

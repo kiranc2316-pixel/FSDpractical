@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="box">
+        <h2>Create Account</h2>
+        {% with messages = get_flashed_messages() %}
+            {% for m in messages %}
+                <p class="msg">{{ m }}</p>
+            {% endfor %}
+        {% endwith %}
+        <form method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email">
+
+            <label for="password">Password:</label>
+            <input type="password" name="password">
+
+            <button type="submit">Register</button>
+        </form>
+        <p>
+            Already registered? <a href="{{ url_for('login') }}">Login here</a>
+        </p>
+    </div>
+</body>
+</html>

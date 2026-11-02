@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E0F2F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+h2 {
+    text-align: center;
+    color: #00695C;
+    margin-bottom: 10px;
+}
+label{
+    color:#00695C;
+}
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #A7D3CE;
+    border-radius: 7px;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00897B;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+a {
+    color: #00796B;
+    text-decoration: none;
+}
+
+/* extra styles for the library pages */
+.box {
+    width: 320px;
+    margin: 40px auto;
+}
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+.center {
+    text-align: center;
+}
+.msg {
+    background: white;
+    color: #00695C;
+    padding: 8px 10px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+h3 {
+    color: #00695C;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+th, td {
+    border: 1px solid #A7D3CE;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background: #00897B;
+    color: white;
+}
