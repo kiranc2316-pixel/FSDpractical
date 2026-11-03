@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gym Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>FITNESS CLUB</h1>
+    <a class="logout" href="/logout">Logout</a>
+
+    <h2>Welcome, {{ name }}</h2>
+    <p>Start your fitness journey today!</p>
+
+    <div class="box">
+        <h3>Workout Plan</h3>
+        <p>Follow your daily exercise routine.</p>
+    </div>
+
+    <div class="box">
+        <h3>Membership</h3>
+        <p>Membership status: Active</p>
+    </div>
+
+    <div class="box">
+        <h3>Progress</h3>
+        <p>Keep training and track your progress.</p>
+    </div>
+</body>
+</html>

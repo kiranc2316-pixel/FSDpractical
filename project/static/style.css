@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+input {
+    display: block;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+.box {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid;
+}
