@@ -55,6 +55,7 @@ def register():
         email = request.form["email"].strip().lower()
         password = request.form["password"]
 
+
         if not name or not email or not password:
             flash("Please fill all fields.")
         else:
