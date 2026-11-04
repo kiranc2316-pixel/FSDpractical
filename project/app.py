@@ -9,7 +9,7 @@ def db_connect():
     return psycopg2.connect(
         dbname="gymdb",
         user="postgres",
-        password="your_password",
+        password="root",
         host="localhost",
         port="5432"
     )
